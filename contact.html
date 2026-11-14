@@ -9,7 +9,7 @@
 <body>
     <a href="#main-content">Skip to main content</a>
     <header>
-        <h1>Contact Us</h1>
+        <h1>Contact us</h1>
         <nav aria-label="Primary Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,7 +21,7 @@
     </header>
     <main id="main-content">
         <section>
-            <h2>Hear from our Volunteer Coordinator.</h2>
+            <h2>A message from our volunteer coordinator</h2>
             <video controls>
                 <source src="assets/rescue-message_c.mp4" type="video/mp4">
                 <p>Video playback is unavailable in your browser. You can listen to the audio message instead:</p>
@@ -32,10 +32,10 @@
             </video>
         </section>
         <section>
-            <h2>Fill out the below form if you are interested in reaching out to us!</h2>
+            <h2>Volunteer and foster interest form</h2>
             <form action="/contact" method="post">
                 <fieldset>
-                    <legend>Personal Information</legend>
+                    <legend>Personal information</legend>
                     <div>
                         <label for="full_name">Full Name*</label>
                         <input type="text" id="full_name" name="full_name" placeholder="John Smith" required>
@@ -46,7 +46,7 @@
                     </div>
                     <div>
                         <label for="tele">Telephone Number</label>
-                        <input type="tel" id="tele" name="tele" placeholder="123-456-7890" min="10" max="10">
+                        <input type="tel" id="tele" name="tele" placeholder="123-456-7890" min="10" max="12" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}>
                     </div>
                     <div>
                         <label for="city">City and/or Zip Code</label>
@@ -54,26 +54,26 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Area of Interest</legend>
+                    <legend>Area of interest*</legend>
                     <div>
-                        <input type="radio" id="aoi_volunteer" name="aoi" value="volunteer">
+                        <input type="radio" id="aoi_volunteer" name="aoi" value="volunteer" required>
                         <label for="aoi_volunteer">Volunteer</label>
                     </div>
                     <div>
-                        <input type="radio" id="aoi_foster" name="aoi" value="foster">
+                        <input type="radio" id="aoi_foster" name="aoi" value="foster" required>
                         <label for="aoi_foster">Foster</label>
                     </div>
                     <div>
-                        <input type="radio" id="aoi_adoption" name="aoi" value="adoption">
+                        <input type="radio" id="aoi_adoption" name="aoi" value="adoption" required>
                         <label for="aoi_adoption">Adoption</label>
                     </div>
                     <div>
-                        <input type="radio" id="aoi_other" name="aoi" value="other">
+                        <input type="radio" id="aoi_other" name="aoi" value="other" required>
                         <label for="aoi_other">Other</label>
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Volunteer Information</legend>
+                    <legend>Volunteer information</legend>
                         <div>
                             <label for="hours">Hours/week:</label>
                             <select id="hours" name="hours">
@@ -84,7 +84,7 @@
                             </select>
                         </div>
                     <fieldset>
-                        <legend>Days of Availability:</legend>                
+                        <legend>Days of availability</legend>                
                             <label><input type="checkbox" name="days" value="Su">Sunday</label>
                             <label><input type="checkbox" name="days" value="M">Monday</label>
                             <label><input type="checkbox" name="days" value="Tu">Tuesday</label>
@@ -95,7 +95,7 @@
                     </fieldset>
                     <div>
                         <label for="experience">Tell us a little about your experience with animals:</label>
-                        <textarea id="experience" name="message" rows="3" cols="45" placeholder="Type your experiences here" maxlength="500"></textarea>
+                        <textarea id="experience" name="experience" rows="3" cols="45" placeholder="Type your experiences here" maxlength="500"></textarea>
                     </div>
                 </fieldset>
                 <fieldset>
@@ -106,16 +106,16 @@
                         </div>
                 </fieldset>
                 <fieldset>
-                    <legend>When you are ready, hit the submit button below</legend>
+                    <legend>Ready to submit?</legend>
                     <button type="submit">Submit</button>
                 </fieldset>
             </form>
         </section>
         <section>
-            <h2>Hours and Areas</h2>
+            <h2>Service area and office hours</h2>
             <div class="card-group">
                 <div class="card">
-                    <h3>Service Areas</h3>
+                    <h3>Service areas</h3>
                     <p>We coordinate rescues, foster placements, and adoptions throughout the greater Minneapolis St. Paul seven-county metropolitan area:</p>
                     <ul>
                         <li>Hennepin</li>
@@ -128,7 +128,7 @@
                     </ul>
                 </div>
                 <div class="card">
-                    <h3>Office Hours:</h3>
+                    <h3>Office hours:</h3>
                     <ul>
                         <li>Monday - Friday: 9:00am to 6:00pm</li>
                         <li>Saturday - Sunday: 10:00am to 4:00pm</li>
@@ -139,7 +139,7 @@
     </main>
     <footer>
         <img src="assets/rescue-logo_c.png" alt="Twin Cities Animal Rescue Logo">
-        <p>&copy; 2026 T.C.Animal Rescue</p>
+        <p>&copy; 2026 Twin Cities Animal Rescue</p>
     </footer>
 </body>
 </html>
