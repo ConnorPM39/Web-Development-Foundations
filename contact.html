@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <a href="#main-content">Skip to main content</a>
     <header>
         <h1>Contact Us</h1>
         <nav aria-label="Primary Navigation">
@@ -14,21 +15,22 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><span aria-current="page">Contact Us</span></li>                
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>               
             </ul>
         </nav>
-    <section>
-        <video controls>
-            <source src="assets/rescue-message_c.mp4" type="video/mp4">
-            <p>Video playback is unavailable in your browser. You can listen to the audio message instead:</p>
-            <audio controls>
-                <source src="assets/rescue-message_c.mp3" type="audio/mpeg">
-                <p>Your browser does not support HTML5 video or audio playback.</p>
-            </audio>
-        </video>
-    </section>
     </header>
-    <main>
+    <main id="main-content">
+        <section>
+            <h2>Hear from our Volunteer Coordinator.</h2>
+            <video controls>
+                <source src="assets/rescue-message_c.mp4" type="video/mp4">
+                <p>Video playback is unavailable in your browser. You can listen to the audio message instead:</p>
+                <audio controls>
+                    <source src="assets/rescue-message_c.mp3" type="audio/mpeg">
+                    <p>Your browser does not support HTML5 video or audio playback.</p>
+                </audio>
+            </video>
+        </section>
         <section>
             <h2>Fill out the below form if you are interested in reaching out to us!</h2>
             <form action="/contact" method="post">
@@ -65,16 +67,22 @@
                         <input type="radio" id="aoi_adoption" name="aoi" value="adoption">
                         <label for="aoi_adoption">Adoption</label>
                     </div>
+                    <div>
+                        <input type="radio" id="aoi_other" name="aoi" value="other">
+                        <label for="aoi_other">Other</label>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Volunteer Information</legend>
-                    <label for="hours">Hours/week:</label>
-                    <select id="hours" name="hours">
-                        <option value="">-- Select a number of hours --</option>
-                        <option value="1-3">1-3</option>
-                        <option value="4-6">4-6</option>
-                        <option value="7+">7+</option>
-                    </select>
+                        <div>
+                            <label for="hours">Hours/week:</label>
+                            <select id="hours" name="hours">
+                                <option value="">-- Select a number of hours --</option>
+                                <option value="1-3">1-3</option>
+                                <option value="4-6">4-6</option>
+                                <option value="7+">7+</option>
+                            </select>
+                        </div>
                     <fieldset>
                         <legend>Days of Availability:</legend>                
                             <label><input type="checkbox" name="days" value="Su">Sunday</label>
@@ -92,8 +100,10 @@
                 </fieldset>
                 <fieldset>
                     <legend>What can we help you with?</legend>
-                    <label for="message">Feel free to tell us what you are looking for below if the form above didn't cover it.</label>
-                <textarea id="message" name="message" rows="5" cols="70" placeholder="Type here with how we can help you!" maxlength="500"></textarea>
+                        <div>
+                            <label for="message">Feel free to tell us what you are looking for below if the form above didn't cover it.</label>
+                            <textarea id="message" name="message" rows="5" cols="70" placeholder="Type here with how we can help you!" maxlength="500"></textarea>
+                        </div>
                 </fieldset>
                 <fieldset>
                     <legend>When you are ready, hit the submit button below</legend>
@@ -103,12 +113,28 @@
         </section>
         <section>
             <h2>Hours and Areas</h2>
-                <p>We coordinate rescues, foster placements, and adoptions throughout the greater Minneapolis St. Paul seven-county metropolitan area (Hennepin, Ramsey, Dakota, Anoka, Washington, Scott, and Carver counties).</p>
-                <p>Office Hours:</p>
+            <div class="card-group">
+                <div class="card">
+                    <h3>Service Areas</h3>
+                    <p>We coordinate rescues, foster placements, and adoptions throughout the greater Minneapolis St. Paul seven-county metropolitan area:</p>
+                    <ul>
+                        <li>Hennepin</li>
+                        <li>Ramsey</li>
+                        <li>Dakota</li>
+                        <li>Anoka</li>
+                        <li>Washington</li>
+                        <li>Scott</li>
+                        <li>Carver</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Office Hours:</h3>
                     <ul>
                         <li>Monday - Friday: 9:00am to 6:00pm</li>
                         <li>Saturday - Sunday: 10:00am to 4:00pm</li>
                     </ul>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
