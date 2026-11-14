@@ -1,4 +1,6 @@
-Instructions
+Using this so I don't have to keep going back to the instructions page
+
+Instructions For Part 1
 Step 1: Choose Your Client
 
 Review the Client Information Page. Select ONE client. Carefully read the client’s purpose, audience, content expectations, media expectations, and form requirements.
@@ -108,3 +110,55 @@ Your content may use placeholder text, but it must match your client’s goals, 
 All technical requirements from the Touchstone Task still apply.
 Use the provided media assets in ways that support the client’s purpose.
 Do not include CSS or JavaScript in this stage.
+
+
+
+
+Instructions for Part 2
+
+Open the multi-page website you created in Touchstone Task 2 . Use the same client you selected previously.
+
+If needed, revisit the original client page:
+Client Information Page (Touchstone Task 2)
+Review the updated design expectations here:
+Client Information Touchstone 3
+Make any small content updates before applying styles.
+Step 2: Apply CSS to Create a Visual Design System
+
+Create or update your external CSS file.
+
+Apply consistent colors, typography, and spacing across all pages
+Style repeated elements such as navigation, headings, sections, and forms
+As you apply styles, follow these guidelines:
+
+Use 2 to 4 main colors across your website
+Use no more than 2 font families
+Apply styles consistently across all pages
+Ensure text is readable against background colors
+Content should be easy to read and scan, meaning users can quickly skim headings, sections, and key information without reading every word.
+Step 3: Implement Responsive Layout
+
+Use a mobile-first approach when styling your pages
+Use Flexbox to organize your layout across your pages
+Add at least one media query to adjust layout for larger screens
+Ensure content remains readable and usable across screen sizes
+Focus on maintaining readability and clear structure as the layout changes.
+Step 4: Complete the Design Explanation Document
+
+In addition to your website, complete the design explanation in the Touchstone 3 Template
+
+Your explanation should focus on your design decisions.
+
+Client Alignment: Explain how your design choices support your selected client’s goals and audience.
+Color Palette: List the 2 to 4 main colors you used. Explain how these colors support your client’s tone and ensure readability.
+Typography: Identify the font or font pair you used. Explain how your choices support readability and create visual hierarchy.
+Responsive Design: Describe how your layout adapts across screen sizes. Include at least one example of a layout or spacing change.
+Design Challenge: Describe one design challenge you encountered and how you addressed it.
+Step 5: Submit Your Work
+
+Submit your updated website files, including HTML and CSS.
+
+Include a link to your GitHub Repository
+Upload your completed design explanation document
+Review your work to confirm that layout, styling, and links function correctly
+Important: You will submit all components as a single file for this Touchstone. Submit the completed Touchstone 3 template with the GitHub Repository link to your project.
