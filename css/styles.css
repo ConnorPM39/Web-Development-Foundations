@@ -258,3 +258,77 @@ video {
 header img {
   width: 100%;
 }
+
+/* ~~~~ Cards and Card Group ~~~~ */
+
+.card-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+
+}
+
+.card {
+  padding: var(--space-md);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-primary);
+  border-top: 4px solid var(--color-primary);
+}
+
+/* ~~~~ Forms and Fieldsets ~~~~ */
+
+div {
+  margin-bottom: var(--space-md);
+}
+
+form {
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+fieldset {
+  padding: var(--space-md);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-primary);
+  border-top: 2px solid var(--color-primary);
+}
+
+legend {
+  font-weight: bold;
+  color: var(--color-text)
+}
+
+form > fieldset:last-child {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-top: 2px solid var(--color-primary);
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: var(--space-sm);
+}
+
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="tel"]:focus-visible,
+select:focus-visible,
+textarea:focus-visible  {
+    border-color: var(--color-accent);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.2);
+}
+
+textarea {
+  resize: vertical;
+}
