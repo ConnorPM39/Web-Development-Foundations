@@ -22,6 +22,8 @@
   --text-xs: 0.25rem;
   --text-sm: 0.5rem;
   --text-md: 1rem;
+  --text-lmd: 1.25rem;
+  --text-slg: 1.5rem;
   --text-lg: 2rem;
   --text-xl: 3rem;
 }
@@ -44,6 +46,7 @@ body {
   font-size: var(--text-md);
   color: var(--color-text);
   background-color: var(--color-background);
+  
 }
 
 img,
@@ -61,12 +64,44 @@ select {
   font: inherit;
 }
 
+header {
+  background-color: var(--color-primary);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
 h1, h2, h3, p {
   overflow-wrap: break-word;
 }
 
+h1 {
+  font-size: var(--text-lg);
+  /* original h1 color
+  color: #134e4a;
+  */
+  color: var(--color-background);
+  margin-bottom: var(--space-sm);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: var(--text-slg);
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: var(--text-lmd);
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+  line-height: 1.2;
+}
+
 p {
-    padding-bottom: var(--space-md);
+    margin-bottom: var(--space-md);
     max-width: 45rem;
 }
 
@@ -84,4 +119,55 @@ a:focus-visible {
     outline: 2px solid var(--color-primary);
     outline-offset: 2px;
     font-weight: bold;
+}
+
+nav li {
+  color: var(--color-background);
+}
+
+main ul,
+main ol {
+  margin-bottom: var(--space-md);
+  padding-left: var(--space-lg);
+}
+
+main ul li,
+main ol li {
+  margin-bottom: var(--space-xs);
+}
+
+
+/* ~~~~ Images and videos ~~~~ */
+
+main img {
+  max-width: 22rem;
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
+figure {
+  margin-bottom: var(--space-md);
+}
+
+figcaption {
+  margin-top: var(--space-sm);
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+/* This one is specifically for the image in about.html, it's not the same as main img
+DO NOT DELETE */
+main section > img {
+  margin-bottom: var(--space-md);
+}
+
+video {
+  width: 100%;
+  max-width: 45rem;
+  border-radius: 0.75rem;
+  margin-bottom: var(--space-md);
+}
+
+header img {
+  width: 100%;
 }
