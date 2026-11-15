@@ -1,0 +1,87 @@
+/* ~~~~ Custom properties and variables for the page ~~~~ */
+:root {
+  /* Was told to pick 2-4 colors, these are the only variables I can think of */
+  --color-primary: #0F766E;
+  --color-accent: #F28C5B;
+  --color-text: #3A2E2A;
+  --color-background: #FFF8F0;
+  /* Used a contrast checker to confirm readability */
+
+  /* Instructions say at most two fonts, I'm going with one.
+     I figure using font-family in key places allows for a fallback */
+  --font-body: sans-serif;
+
+  /* Spacing variables */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+
+  /* Text variable */
+  --text-xs: 0.25rem;
+  --text-sm: 0.5rem;
+  --text-md: 1rem;
+  --text-lg: 2rem;
+  --text-xl: 3rem;
+}
+
+/* ~~~~ Defining new defaults ~~~~ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+/* ~~~~ Changes to basic elements ~~~~ */
+body {
+  line-height: 1.5;
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+img,
+picture,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1, h2, h3, p {
+  overflow-wrap: break-word;
+}
+
+p {
+    padding-bottom: var(--space-md);
+    max-width: 45rem;
+}
+
+a,
+a:visited {
+    color: var(--color-primary);
+}
+
+a:hover {
+    color: #134e4a;
+    text-decoration: none;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    font-weight: bold;
+}
