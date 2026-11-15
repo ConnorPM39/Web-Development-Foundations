@@ -210,7 +210,8 @@ main ol li {
 
 section {
   margin-bottom: var(--space-xl);
-  border-top: 1px solid var(--color-accent);
+  border-top: 1px solid var(--color-accent); 
+  padding-top: var(--space-md);
 }
 
 footer {
@@ -277,15 +278,15 @@ header img {
 
 /* ~~~~ Forms and Fieldsets ~~~~ */
 
-div {
-  margin-bottom: var(--space-md);
-}
-
 form {
   max-width: 40rem;
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+}
+
+form div {
+  margin-bottom: var(--space-md);
 }
 
 fieldset {
@@ -297,7 +298,7 @@ fieldset {
 
 legend {
   font-weight: bold;
-  color: var(--color-text)
+  color: var(--color-text);
 }
 
 form > fieldset:last-child {
@@ -325,8 +326,8 @@ input[type="tel"]:focus-visible,
 select:focus-visible,
 textarea:focus-visible  {
     border-color: var(--color-accent);
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.2);
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
 }
 
 textarea {
