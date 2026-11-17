@@ -1,164 +1,30 @@
-Using this so I don't have to keep going back to the instructions page
+Twin Cities Animal Rescue
 
-Instructions For Part 1
-Step 1: Choose Your Client
+A four-page website for Twin Cities Animal Rescue (one of the clients available), a community nonprofit that connects animals with foster homes, adopters, and volunteers in the Minneapolis–St. Paul area.
 
-Review the Client Information Page. Select ONE client. Carefully read the client’s purpose, audience, content expectations, media expectations, and form requirements.
-
-Step 2: Plan Your Website Structure
-
-Outline the content for four pages: index.html, products.html or services.html, about.html, and contact.html or events.html.
-
-Decide where the required elements will appear, including relevant images, one figure with a caption, one responsive image using the <picture></picture> element, one audio or video element with fallback text, and the required form.
-Media files will be provided. Plan how you will incorporate those assets in ways that support your selected client’s purpose and content.
-Ensure your content decisions align with your selected client’s goals, audience, and tone.
-Step 3: Build Your HTML Pages
-
-Create four separate HTML files in GitHub Codespaces using proper boilerplate structure.
-
-Include one h1 per page, along with header, nav, main, and footer elements.
-Build consistent navigation using an unordered list and relative paths.
-Add the required provided media and embed at least one audio or video element using HTML with fallback text.
-Include one complete form with proper labels, fieldset, legend, and built-in validation attributes.
-Do not include CSS or JavaScript in this Touchstone Task.
-Step 4: Review Your Work
-
-Review each page in GitHub Codespaces and correct any errors.
-
-Confirm a logical heading hierarchy and meaningful alt text.
-Ensure all internal links function correctly.
-Verify that all required elements are included and properly structured.
-Make sure your content, media, and form choices match your selected client.
-Step 5: Prepare and Submit Your Document
-
-Download and complete the provided student template document.
-Paste the complete HTML code for all four pages, clearly labeled by filename.
-Fill out the included checklist by identifying where each required element appears and briefly describing how it fits your selected client.
-Write a short accessibility confirmation explaining one accessibility decision you made.
-Save the file as LastName_FirstName_TouchstoneTask2 and upload it as your single submission file.
-Common Mistakes to Avoid
-Using generic content that does not match the selected client
-Missing or vague alt text
-Forgetting fallback text for audio or video
-Using broken or incorrect relative links
-Leaving out required form elements such as labels, fieldset, or legend
-Submitting screenshots instead of pasting code as text
-Your website should not only include the required HTML elements. It should also reflect the purpose, audience, and content needs of your selected client.
-
-SCENARIO
-
-Client C: Twin Cities Animal Rescue
-Client Type: Community nonprofit
-Purpose: Increase awareness and collect volunteer or foster interest inquiries.
-Target Audience: Potential adopters, volunteers, donors, and community partners.
-Brand Tone: Hopeful, trustworthy, and action oriented.
-
-Required Pages
-
-Home: index.html
-Mission statement - 
-Impact statistics, using text only
-“How You Can Help” section
+Live Site https://connorpm39.github.io/Web-Development-Foundations/
 
 
+Pages
 
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-
-Services: services.html
-Adoption process overview
-Foster program overview
-Volunteer role descriptions
-
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-
-About: about.html
-Organization story
-Core values
-Partner acknowledgments
-
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-
-Contact: contact.html
-Volunteer or foster interest form
-Service area
-Office hours
-
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-
-Media Requirements
-Use the provided rescue ZIP file. 
-Your site should include:
-
-About Us - Adoptable pet photo
-Services - Volunteer or event photo
-Home - One figure featuring a pet spotlight with a caption
-? - One responsive featured image using the <picture> element
-Contact - One short director or coordinator video message with fallback text
-
-Form Focus
-The form should collect:
-
-Name
-Email
-Interest type, such as volunteer, foster, or adoption information
-Availability
-Experience with pets
-Short message
-
-Important Notes
-Your content may use placeholder text, but it must match your client’s goals, audience, and tone.
-All technical requirements from the Touchstone Task still apply.
-Use the provided media assets in ways that support the client’s purpose.
-Do not include CSS or JavaScript in this stage.
+Home (index.html): mission, impact stats, pet spotlight, and ways to help
+Services (services.html): adoption process, foster program, and volunteer roles
+About (about.html): our story, values, and partners
+Contact (contact.html): coordinator video, volunteer/foster interest form, service area, and office hours
 
 
+Project structure
+
+index.html
+services.html
+about.html
+contact.html
+css/
+  styles.css
+assets/
+  images, video, and audio files
 
 
-Instructions for Part 2
+Course
 
-Open the multi-page website you created in Touchstone Task 2 . Use the same client you selected previously.
-
-If needed, revisit the original client page:
-Client Information Page (Touchstone Task 2)
-Review the updated design expectations here:
-Client Information Touchstone 3
-Make any small content updates before applying styles.
-Step 2: Apply CSS to Create a Visual Design System
-
-Create or update your external CSS file.
-
-Apply consistent colors, typography, and spacing across all pages
-Style repeated elements such as navigation, headings, sections, and forms
-As you apply styles, follow these guidelines:
-
-Use 2 to 4 main colors across your website
-Use no more than 2 font families
-Apply styles consistently across all pages
-Ensure text is readable against background colors
-Content should be easy to read and scan, meaning users can quickly skim headings, sections, and key information without reading every word.
-Step 3: Implement Responsive Layout
-
-Use a mobile-first approach when styling your pages
-Use Flexbox to organize your layout across your pages
-Add at least one media query to adjust layout for larger screens
-Ensure content remains readable and usable across screen sizes
-Focus on maintaining readability and clear structure as the layout changes.
-Step 4: Complete the Design Explanation Document
-
-In addition to your website, complete the design explanation in the Touchstone 3 Template
-
-Your explanation should focus on your design decisions.
-
-Client Alignment: Explain how your design choices support your selected client’s goals and audience.
-Color Palette: List the 2 to 4 main colors you used. Explain how these colors support your client’s tone and ensure readability.
-Typography: Identify the font or font pair you used. Explain how your choices support readability and create visual hierarchy.
-Responsive Design: Describe how your layout adapts across screen sizes. Include at least one example of a layout or spacing change.
-Design Challenge: Describe one design challenge you encountered and how you addressed it.
-Step 5: Submit Your Work
-
-Submit your updated website files, including HTML and CSS.
-
-Include a link to your GitHub Repository
-Upload your completed design explanation document
-Review your work to confirm that layout, styling, and links function correctly
-Important: You will submit all components as a single file for this Touchstone. Submit the completed Touchstone 3 template with the GitHub Repository link to your project.
+Created for Web Development Foundations.
