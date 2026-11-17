@@ -310,6 +310,14 @@ form > fieldset:last-child {
   margin-bottom: 0;
 }
 
+/* This one is actually for the days of availability on contact.html
+it's the only one that has a fieldset inside a fieldset */
+form > fieldset > fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -318,11 +326,14 @@ textarea {
     display: block;
     width: 100%;
     padding: var(--space-sm);
+    margin-top: var(--space-xs);
+    margin-bottom: 0;
 }
 
 input[type="text"]:focus-visible,
 input[type="email"]:focus-visible,
 input[type="tel"]:focus-visible,
+button[type="submit"]:focus-visible,
 select:focus-visible,
 textarea:focus-visible  {
     border-color: var(--color-accent);
@@ -330,6 +341,32 @@ textarea:focus-visible  {
     outline-offset: 2px;
 }
 
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: var(--color-primary);
+  margin-right: var(--space-xs);
+}
+
 textarea {
   resize: vertical;
+  border: 1px solid var(--color-text);
+  background-color: white;
+  border-radius: 0.75rem;
+}
+
+fieldset > div:last-child {
+  margin-bottom: 0;
+}
+
+button[type="submit"] {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  font-weight: bold;
+  padding: var(--space-sm);
+  border-radius: 0.75rem;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--color-text);
+  color: var(--color-background);
 }
